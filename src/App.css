@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  background-color: #EDEFEE;
+  height: 6vh;
+}
+
+.header img {
+  max-height: 4vh;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  max-height: 4vh;
+  color: #333333;
+}
+
+.nav a, .footer-nav a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 1rem;
+}
+
+.footer img {
+  max-height: 15vh;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: right; */
+  list-style: none;
+  max-height: 4vh;
+  gap: 0.25rem;
+  margin-top: -6rem;
+}
+
+.footer-nav h6 {
+  margin-bottom: 0.5rem;
+}
