@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 65rem;
+    height: 4rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+header img {
+    height: 3.12rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        max-width: 65rem;
+        height: 4rem;
+        margin: 0;
+    }
+}

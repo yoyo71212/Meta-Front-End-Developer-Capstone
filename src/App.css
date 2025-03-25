@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Karla", sans-serif;
+}
+
+p {
+  /* font-family: "Markazi Text", serif; */
+  font-family: "Karla", sans-serif;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+  height: 100vh;
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .layout {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+    list-style: none;
+    max-height: 4vh;
+    gap: -2000px;
+    margin-top: -6rem;
+  }
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  min-height: 60vh;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 .App {
   text-align: center;
 }
@@ -37,6 +100,7 @@
   }
 }
 
+/* 
 .header {
   display: flex;
   align-items: center;
@@ -78,7 +142,6 @@
 .footer-nav {
   display: flex;
   flex-direction: column;
-  /* justify-content: right; */
   list-style: none;
   max-height: 4vh;
   gap: 0.25rem;
@@ -87,4 +150,4 @@
 
 .footer-nav h6 {
   margin-bottom: 0.5rem;
-}
+} */
