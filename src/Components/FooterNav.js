@@ -1,32 +1,34 @@
+import { Link } from "react-router-dom";
+
 export default function FooterNav() {
     return (
         <div className="footer-nav">
             <nav id="footer-nav-1">
                 <ul>
                     <li><h6>Doormat Navigation</h6></li>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/about">ABOUT</a></li>
-                    <li><a href="/menu">MENU</a></li>
-                    <li><a href="/reservations">RESERVATIONS</a></li>
-                    <li><a href="/order-online">ORDER ONLINE</a></li>
-                    <li><a href="/login">LOGIN</a></li>
+                    <li><Link to="/">HOME</Link></li>
+                    <li><Link to="/about">ABOUT</Link></li>
+                    <li><Link to="/menu">MENU</Link></li>
+                    <li><Link to="/reservations">RESERVATIONS</Link></li>
+                    <li><Link to="/order-online">ORDER ONLINE</Link></li>
+                    <li><Link to="/login">LOGIN</Link></li>
                 </ul>
             </nav>
 
             <nav id="footer-nav-2">
                 <ul>
                     <li><h6>Contact</h6></li>
-                    <li><a href="/address">Address</a></li>
-                    <li><a href="/phone-number">Phone Number</a></li>
-                    <li><a href="/email">Email</a></li>
+                    <li><Link to="/address">Address</Link></li>
+                    <li><Link to="/phone-number">Phone Number</Link></li>
+                    <li><Link to="/email">Email</Link></li>
                 </ul>
             </nav>
 
             <nav id="footer-nav-3">
                 <ul>
                     <li><h6>Social Media Links</h6></li>
-                    <li><a href="/facebook">Facebook</a></li>
-                    <li><a href="/instagram">Instagram</a></li>
+                    <li><Link to="/facebook">Facebook</Link></li>
+                    <li><Link to="/instagram">Instagram</Link></li>
                 </ul>
             </nav>
         </div>

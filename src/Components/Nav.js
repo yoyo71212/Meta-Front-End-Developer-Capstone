@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Nav.css";
 import "../styles/Header.css";
 
@@ -23,12 +24,12 @@ export default function Navbar() {
     
           <nav className={ isOpen ? "nav-dropdown" : "nav nav-dropdown-hide" }>
               <ul>
-                  <li><a href="/">HOME</a></li>
-                  <li><a href="/about">ABOUT</a></li>
-                  <li><a href="/menu">MENU</a></li>
-                  <li><a href="/reservations">RESERVATIONS</a></li>
-                  <li><a href="/order-online">ORDER ONLINE</a></li>
-                  <li><a href="/login">LOGIN</a></li>
+                  <li><Link to="/">HOME</Link></li>
+                  <li><Link to="/about">ABOUT</Link></li>
+                  <li><Link to="/menu">MENU</Link></li>
+                  <li><Link to="/reservations">RESERVATIONS</Link></li>
+                  <li><Link to="/order-online">ORDER ONLINE</Link></li>
+                  <li><Link to="/login">LOGIN</Link></li>
               </ul>
           </nav>
       </>

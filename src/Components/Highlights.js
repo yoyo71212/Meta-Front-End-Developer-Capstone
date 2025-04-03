@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Highlights.css";
 import SpecialCard from "./SpecialCard";
 
@@ -24,7 +25,11 @@ export default function Highlights() {
         <>
             <div className="special-header">
                 <h1>Specials</h1>
-                <button>Online Menu</button>
+                <button>
+                    <Link to="/menu" style={{textDecoration: "none", color: "inherit"}}>
+                        Online Menu
+                    </Link>
+                </button>
             </div>
 
             <div className="special-container">
